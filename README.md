@@ -1,12 +1,16 @@
 # VIilMx 1.0
 
+<img src="assets/brand/viilmx-logo.svg" width="376" alt="VIilMx 1.0 logo">
+
 **Live in the Movie.**
 
 See an ordinary scene in a different light. VIilMx is a cinematic smart-glasses project built around a forward-facing camera, a head-mounted display design, and a live color-grading pipeline. The software viewfinder lets you try the visual experience on a computer before connecting any wearable hardware.
 
-![VIilMx industrial design concept render](assets/hardware/concept-render.jpg)
+![VIilMx eyewear concept with a central camera and cyan and amber studio lighting](assets/brand/viilmx-hero.jpg)
 
-*Industrial design concept render from the project workspace.*
+*Campaign concept render based on the original eyewear design.*
+
+[Logo SVG](assets/brand/viilmx-logo.svg) · [Standalone mark SVG](assets/brand/viilmx-mark.svg) · [Original hardware concept](assets/hardware/concept-render.jpg)
 
 ## Everyday scenes, recast
 

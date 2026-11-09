@@ -1,6 +1,12 @@
 # VIilMx 1.0 · Live in the Movie
 
+<img src="../assets/brand/viilmx-logo.svg" width="376" alt="VIilMx 1.0 标志">
+
 VIilMx 是一款电影风格智能眼镜项目。它希望让同一条街、同一个日常场景，随滤镜切换呈现不同的光线和色彩质感。
+
+![VIilMx 眼镜概念渲染](../assets/brand/viilmx-hero.jpg)
+
+宣传概念渲染参考了原始镜架和镜桥摄像头设计。[独立图标 SVG](../assets/brand/viilmx-mark.svg) · [原始硬件概念图](../assets/hardware/concept-render.jpg)
 
 ![城市街景、办公桌和卧室的原图及滤镜效果](../assets/scenes/everyday-comparison.jpg)
 

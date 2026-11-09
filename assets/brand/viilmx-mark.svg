@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title">
+  <title id="title">VIilMx viewfinder mark</title>
+  <path d="M39 25H28a8 8 0 0 0-8 8v11m61-19h11a8 8 0 0 1 8 8v11M20 76v11a8 8 0 0 0 8 8h11m61-19v11a8 8 0 0 1-8 8H81" fill="none" stroke="#43CFE6" stroke-width="6" stroke-linecap="square"/>
+  <path d="M39 47l21 30 21-30" fill="none" stroke="#43CFE6" stroke-width="8" stroke-linejoin="bevel" stroke-linecap="square"/>
+</svg>
