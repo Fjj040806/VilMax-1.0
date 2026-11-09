@@ -8,6 +8,12 @@ video.muted = true;
 video.playsInline = true;
 video.loop = true;
 
+const samples = {
+  city: ['City street · real photo', './assets/scenes/city.jpg'],
+  desk: ['Office desk · real photo', './assets/scenes/desk.jpg'],
+  bedroom: ['Bedroom · real photo', './assets/scenes/bedroom.jpg'],
+  synthetic: ['Synthetic street scene', './assets/demo/street-input.jpg'],
+};
 const grader = new CinematicGrader();
 let source;
 let stream;
@@ -54,6 +60,7 @@ function draw(time) {
     const image = context.getImageData(0, 0, w, h);
     const split = get('compare').checked ? Math.floor(w / 2) : 0;
     grader.apply(image.data, get('look').value, {
+      width: w,
       intensity: Number(get('intensity').value) / 100,
       adaptive: get('adaptive').checked,
       dt: source !== video ? 0.25 : previousTime === undefined ? 1 / 30 : (time - previousTime) / 1000,
@@ -70,6 +77,7 @@ function draw(time) {
 
 async function load(kind, file) {
   const current = ++generation;
+  const sample = samples[get('sample').value];
   stop();
   get('status').textContent = 'Opening source…';
   try {
@@ -87,7 +95,7 @@ async function load(kind, file) {
     }
     if (kind === 'sample' || kind === 'image') {
       const image = new Image();
-      image.src = kind === 'sample' ? './assets/demo/street-input.jpg' : objectUrl;
+      image.src = kind === 'sample' ? sample[1] : objectUrl;
       await image.decode();
       if (current !== generation) return;
       source = image;
@@ -98,7 +106,7 @@ async function load(kind, file) {
       source = video;
     }
     if (kind === 'camera') get('camera').textContent = 'Stop camera';
-    get('status').textContent = kind === 'sample' ? 'Synthetic street scene' : kind === 'camera' ? 'Live camera' : file.name;
+    get('status').textContent = kind === 'sample' ? sample[0] : kind === 'camera' ? 'Live camera' : file.name;
     if (source !== video) {
       // Settle still-image metering deterministically without a render loop.
       const meter = document.createElement('canvas');
@@ -117,7 +125,8 @@ async function load(kind, file) {
   }
 }
 
-get('sample').onclick = () => load('sample');
+get('sample').onchange = () => load('sample');
+get('load-sample').onclick = () => load('sample');
 get('camera').onclick = () => {
   if (stream) {
     generation++;

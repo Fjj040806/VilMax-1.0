@@ -30,3 +30,17 @@ The [TI TCA9548A datasheet](https://www.ti.com/lit/ds/symlink/tca9548a.pdf) desc
 ## Bench evidence for hardware integration
 
 Record the exact part revisions, verified power budget, camera mode and dropped frames, per-eye output and alignment, temperatures and camera-to-display latency. For latency, measure the time from an external visual event to its reproduction at the display. Software grading time measures only one part of this path. The published software does not implement IMU fusion, panel drivers or stereo reconstruction.
+
+## Mechanical and electrical detail
+
+The enclosure holds separate left and right display mounts. The bridge mount positions the scene camera near the center of the frame. Dedicated mounting parts locate the compute module, IMU and I²C bracket. The strap attachment and cable routing are documented as the final assembly phase. The layout screenshot records placement and approximate packaging intent. Final dimensions and print settings require the original CAD or measurements.
+
+| Path | Documented role | Verification point |
+| --- | --- | --- |
+| Scene camera → compute | Forward video input, MIPI camera shown | Exact sensor, compatible carrier connector, driver and streaming mode |
+| IMU and I²C switch → compute | Orientation data and low-speed bus routing | Board revision, addressing, axes, channel map and timing |
+| Compute → left and right displays | Separate near-eye outputs shown | Panel and controller SKUs, supported video path and per-eye optical alignment |
+| Power subsystem → electronics | Portable cell and PD buck-boost board shown | Confirm the actual power architecture using the board and battery specifications |
+| Chassis → electronics and optics | PETG mounts and M2 hardware | As-built clearances, fastener lengths, thermal placement and strain relief |
+
+See the [full 16-step build dossier](build-log.md) for the mapping from each fabrication, wiring, bring-up and assembly step to its source screenshot.

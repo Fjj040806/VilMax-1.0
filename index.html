@@ -21,7 +21,13 @@ canvas{display:block;width:100%;height:auto;border-radius:12px;background:#181a2
 <p>Switch cinematic looks on a camera feed, video, or photo. Processing stays in this browser.</p></header>
 <div class="controls">
 <button id="camera">Start camera</button>
-<button id="sample">Load sample</button>
+<label>Sample <select id="sample">
+<option value="city">City street</option>
+<option value="desk">Office desk</option>
+<option value="bedroom">Bedroom</option>
+<option value="synthetic">Synthetic street</option>
+</select></label>
+<button id="load-sample">Load sample</button>
 <label class="upload">Open photo or video <input id="file" type="file" accept="image/*,video/*"></label>
 <label>Look <select id="look"></select></label>
 <label>Intensity <input id="intensity" type="range" min="0" max="100" value="100"></label>
@@ -30,7 +36,7 @@ canvas{display:block;width:100%;height:auto;border-radius:12px;background:#181a2
 </div>
 <canvas id="preview" width="960" height="540" aria-label="Software viewfinder. Original on the left when comparison is enabled."></canvas>
 <p id="status" role="status"></p>
-<footer>Bundled scene is synthetic. Camera access requires localhost or HTTPS.</footer>
+<footer>Photo sources and credits are listed in the <a href="./docs/gallery.md">gallery</a>. Camera access requires localhost or HTTPS.</footer>
 <script type="module" src="./viewfinder.js"></script>
 </body>
 </html>
