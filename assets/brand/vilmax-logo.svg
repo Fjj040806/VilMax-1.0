@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="376" height="104" viewBox="0 0 376 104" role="img" aria-labelledby="title">
+  <title id="title">VilMax 1.0</title>
+  <rect width="376" height="104" rx="13" fill="#0D1218"/>
+  <g transform="translate(10 4) scale(.8)" fill="none" stroke-linecap="square">
+    <path d="M39 25H28a8 8 0 0 0-8 8v11m61-19h11a8 8 0 0 1 8 8v11M20 76v11a8 8 0 0 0 8 8h11m61-19v11a8 8 0 0 1-8 8H81" stroke="#43CFE6" stroke-width="6"/>
+    <path d="M35 49l20 28 20-28" stroke="#43CFE6" stroke-width="7" stroke-linejoin="bevel"/>
+    <path d="M62 49l20 28" stroke="#FFB86D" stroke-width="7"/>
+  </g>
+  <g fill="none" stroke="#F5F7FA" stroke-width="4.5" stroke-linejoin="bevel" stroke-linecap="square">
+    <path d="M118 34l13 36 13-36m15 14v22m0-33v.5m14-3.5v36m17 0V34l16 22 16-22v36"/>
+    <path d="M256 49v21m0-18c-4-4-12-5-16-1-4 4-4 12 0 16s12 3 16-1"/>
+    <path d="M270 48l20 22" stroke="#43CFE6"/>
+    <path d="M290 48l-20 22" stroke="#FFB86D"/>
+  </g>
+  <path d="M306 40v24" stroke="#415360" stroke-width="1.5"/>
+  <path d="M319 48l5-4v16m11 0h.5m9.5-16h5l3 3v10l-3 3h-5l-3-3V47z" fill="none" stroke="#93A8B7" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel"/>
+</svg>

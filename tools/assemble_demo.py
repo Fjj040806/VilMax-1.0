@@ -11,7 +11,7 @@ cream, muted, background = '#f6eee3', '#c9b9aa', '#111319'
 
 poster = Image.new('RGB', (1200, 770), background)
 draw = ImageDraw.Draw(poster)
-draw.text((24, 19), 'VIilMx 1.0  /  LIVE IN THE MOVIE', font=font, fill=cream)
+draw.text((24, 19), 'VilMax 1.0  /  LIVE IN THE MOVIE', font=font, fill=cream)
 draw.text((24, 47), 'SOFTWARE VIEWFINDER   ·   SYNTHETIC STREET SCENE', font=small, fill=muted)
 for i, (key, name) in enumerate(list(looks.items())[1:]):
     x, y = 24 + i % 2 * 582, 80 + i // 2 * 337
@@ -35,7 +35,7 @@ for key in ('neon', 'amber', 'noir', 'teal'):
         draw = ImageDraw.Draw(frame)
         if 0 < boundary < w:
             draw.line((boundary, 0, boundary, h), fill=cream, width=2)
-        draw.text((10, h + 8), 'VIilMx  /  ' + (looks[key] if step else 'Original'), font=font, fill=cream)
+        draw.text((10, h + 8), 'VilMax  /  ' + (looks[key] if step else 'Original'), font=font, fill=cream)
         frames.append(frame.quantize(colors=64))
         durations.append(900 if step == 5 else 100)
 frames[0].save(root / 'live-in-the-movie.gif', save_all=True, append_images=frames[1:], duration=durations, loop=0, optimize=True)

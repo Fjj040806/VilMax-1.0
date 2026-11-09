@@ -38,7 +38,7 @@ def paste_photo(canvas, image, xy, size):
 
 featured = Image.new('RGB', (1200, 714), BACKGROUND)
 featured_draw = ImageDraw.Draw(featured)
-label(featured_draw, (24, 16), 'VIilMx 1.0  /  EVERYDAY SCENES', 24)
+label(featured_draw, (24, 16), 'VilMax 1.0  /  EVERYDAY SCENES', 24)
 label(featured_draw, (24, 48), 'ORIGINAL PHOTOGRAPHY  /  SOFTWARE GRADES', 14, ACCENT)
 
 for index, (key, scene, featured_look) in enumerate(PAIRS):

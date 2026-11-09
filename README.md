@@ -1,22 +1,24 @@
-# VIilMx 1.0
+# VilMax 1.0
 
-<img src="assets/brand/viilmx-logo.svg" width="376" alt="VIilMx 1.0 logo">
+<img src="assets/brand/vilmax-logo.svg" width="376" alt="VilMax 1.0 logo">
 
 **Live in the Movie.**
 
-See an ordinary scene in a different light. VIilMx is a cinematic smart-glasses project built around a forward-facing camera, a head-mounted display design, and a live color-grading pipeline. The software viewfinder lets you try the visual experience on a computer before connecting any wearable hardware.
+VilMax takes its name from **Vision + Film**. The final **x** stands for interaction and technology.
 
-![VIilMx eyewear concept with a central camera and cyan and amber studio lighting](assets/brand/viilmx-hero.jpg)
+See an ordinary scene in a different light. VilMax is a cinematic smart-glasses project built around a forward-facing camera, a head-mounted display design, and a live color-grading pipeline. The software viewfinder lets you try the visual experience on a computer before connecting any wearable hardware.
+
+![VilMax eyewear concept with a central camera and cyan and amber studio lighting](assets/brand/vilmax-hero.jpg)
 
 *Campaign concept render based on the original eyewear design.*
 
-[Logo SVG](assets/brand/viilmx-logo.svg) · [Standalone mark SVG](assets/brand/viilmx-mark.svg) · [Original hardware concept](assets/hardware/concept-render.jpg)
+[Logo SVG](assets/brand/vilmax-logo.svg) · [Standalone mark SVG](assets/brand/vilmax-mark.svg) · [Original hardware concept](assets/hardware/concept-render.jpg)
 
 ## Everyday scenes, recast
 
 ![Original and graded comparisons on a city street, office desk and bedroom](assets/scenes/everyday-comparison.jpg)
 
-*Real photographs, graded with the VIilMx software. See [all ten looks on each scene and photo credits](docs/gallery.md).*
+*Real photographs, graded with the VilMax software. See [all ten looks on each scene and photo credits](docs/gallery.md).*
 
 [Animated software preview on a synthetic street](assets/demo/live-in-the-movie.gif) · [16-step hardware build dossier](docs/build-log.md) · [Grading pipeline](docs/pipeline.md) · [中文项目说明](docs/README.zh-CN.md)
 
